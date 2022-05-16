@@ -7,9 +7,12 @@ if len(sys.argv) != 3:
 
 num_lootboxes = sys.argv[2]
 counter = 0
+x_coord = 1711
+y_coord = 1315
+
 # wait for you to double click left click, and then starts the program
 mouse.wait(button='right', target_types='double')
-mouse.move(1711, 1315, absolute=True)
+mouse.move(x_coord, y_coord, absolute=True)
 while(counter < num_lootboxes)
     mouse.click(button='left')
     sleep(5)
